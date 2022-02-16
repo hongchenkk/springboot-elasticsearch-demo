@@ -1,0 +1,8 @@
+spring:
+  #应用程序名字
+  application:
+    name: godink-elasticsearch-demo
+
+#配置 log4j2日志的配置文件路径    
+logging:
+  config: classpath:log4j2.xml
