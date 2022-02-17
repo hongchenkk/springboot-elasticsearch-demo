@@ -30,7 +30,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
- * elasticsearch测试类
+ * elasticsearch测试类: 测试基本的操作
  * 参考文档：https://juejin.cn/post/6844903828932804615
  * @author Hong.Chen
  *
@@ -173,7 +173,7 @@ public class TestESRestClient {
 		updateRequest.doc(updateMap);
 		
 		UpdateResponse updateResponse = restHighLevelClient.update(updateRequest);
-		System.out.println(updateResponse);
+		System.out.println(updateResponse);   
 		
 		testFindById();
 	}
